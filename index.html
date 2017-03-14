@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="CSS/w3.css">
+	<link rel="stylesheet" href="CSS/scrollbar.css">
+	<link rel="stylesheet" href="CSS/main.css">
+	<script src="js/mouse_move.js"></script>
+	<title>Spin Wheel</title>
+</head>
+
+<body>
+	<header>
+		<div class="w3-container w3-indigo w3-card-8">
+			<h1>Spin Wheel</h1> </div>
+	</header>
+	<main>
+		<div class="w3-card-4 param w3-blue w3-row"> X: <span id="xxx"></span>
+			<br> Y: <span id="yyy"></span>
+			<br>
+			<br>
+			<br> Damping Coefficient: <span class="w3-col s10"><input value="2" type="range" min="2" max="10" id="dampingbar" ></span><span class="w3-col s2" id="damping">2</span> <br>
+			Velocity: <span id="vel"></span><br>
+			
+			
+		</div>
+		<div id="bulb">💡</div>
+	</main>
+	<footer class="w3-container"> Copyright &copy; 2017 Si Zengyu </footer>
+	<script>
+		window.onmousemove = showPara;
+	</script>
+</body>
+
+</html>
